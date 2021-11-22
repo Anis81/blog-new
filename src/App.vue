@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <header>
+  header
+    </header>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <footer>
+      footer
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/BlogList.vue'
 
 export default {
   name: 'App',
@@ -16,7 +21,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "~@/assets/scss/vendors/bootstrap-vue/index";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +30,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: #F8F8F8;
 }
 </style>
